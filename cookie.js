@@ -26,7 +26,7 @@ function getCookie(name, json=false) {
   else return undefined;
 }
 
-function setCookie(name, value, options = {}) {
+function setCookie(name, value, options = {path: '/'}) {
   /*
   Sets a cookie with specified name (str), value (str) & options (dict)
 
@@ -43,9 +43,6 @@ function setCookie(name, value, options = {}) {
     - httpOnly (bool) - if true, cookie won't be avaliable for using in JavaScript
                         IT CAN'T BE FALSE
   */
-  options = {
-    path: '/'
-  };
   if (options.expires instanceof Date) {
     options.expires = options.expires.toUTCString();
   }
@@ -69,7 +66,8 @@ function deleteCookie(name) {
   Deletes a cookie with specified name.
   Returns true when cookie was successfully deleted, otherwise false
   */
-  setCookie(name, "", {
-    'max-age': -1
+  setCookie(name, null, {
+    expires: Date(0),
+    path: '/'
   })
 }
