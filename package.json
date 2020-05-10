@@ -1,0 +1,24 @@
+{
+  "name": "cookie.js",
+  "version": "1.0.0",
+  "description": "Simple & lightweight library for working with cookies",
+  "main": "src/cookie.js",
+  "unpkg": "src/cookie.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UnSstrennen/cookie.js.git"
+  },
+  "keywords": [
+    "cookie",
+    "cookies"
+  ],
+  "author": "UnSstrennen",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/UnSstrennen/cookie.js/issues"
+  },
+  "homepage": "https://github.com/UnSstrennen/cookie.js#readme"
+}
