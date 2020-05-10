@@ -1,5 +1,5 @@
 {
-  "name": "cookie.js",
+  "name": "cookiejs",
   "version": "1.0.0",
   "description": "Simple & lightweight library for working with cookies",
   "main": "src/cookie.js",
