@@ -9,7 +9,7 @@ function getCookie(name, json=false) {
     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
   ));
   if (matches) {
-    var res = decodeURIComponent(matches[1]);
+    let res = decodeURIComponent(matches[1]);
     if (json) {
       try {
         return JSON.parse(res);
