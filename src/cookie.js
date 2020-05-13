@@ -64,7 +64,7 @@ function deleteCookie(name) {
   Returns true when cookie was successfully deleted, otherwise false
   */
   setCookie(name, null, {
-    expires: Date(0),
+    expires: new Date(),
     path: '/'
   })
 }

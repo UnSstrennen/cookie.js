@@ -36,8 +36,8 @@ setCookie('name', {"key": "value"});  // json cookie
 ```
 Create an expiring cookie:
 ```javascript
-setCookie('name', 'value', {expires: Date(3)});  // string
-setCookie('name', {"key": "value"}, {expires: Date(3)});  // json
+setCookie('name', 'value', {expires: new Date('2020-10-10 03:00:00')});  // string
+setCookie('name', {"key": "value"}, {expires: new Date('2020-10-10 03:00:00')});  // json
 ```
 
 **Don't forget that JSON format supports only double quotes.**
