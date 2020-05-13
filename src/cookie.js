@@ -1,6 +1,9 @@
 /* © Un Sstrennen, 2020 */
 
 function getCookie(name, json=false) {
+  if (!name) {
+    return undefined;
+  }
   /*
   Retruns cookie with specified name (str) if exists, else - undefined
   if returning value is JSON and json parameter is true, returns json, overwise str
