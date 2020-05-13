@@ -13,7 +13,7 @@ A simple &amp; lightweight library for working with cookies written on pure Java
 ## Installation
 ### 1. npm package manager
 ```bash
-npm i cookie.js
+npm i cookielib
 ```
 ### 2. Minified version (**unpkg CDN**)
 ```html
