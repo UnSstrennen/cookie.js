@@ -56,10 +56,10 @@ deleteCookie('name');  // json or string cookie: no matter!
 ## <a name="options"></a>Setting cookie options
 For setting a cookie option, call ```setCookie(name, value, dict)``` function filling **dict** parameter as dictionary.
 #### Keys &amp; values list:
-- **path** (str) - URL, for which this cookie is avaliable (must be absolute!)
-- **domain** (str) - domain, for which this cookie is avaliable
+- **path** (str) - URL, for which this cookie is available (must be absolute!)
+- **domain** (str) - domain, for which this cookie is available
 - **expires** (Date object) - expiration date&time of cookie
 - **max-age** (int) - cookie lifetime in seconds (alternative for expires option)
-- **secure** (bool) - if true, cookie will be avaliable only for HTTPS. IT CAN'T BE FALSE
+- **secure** (bool) - if true, cookie will be available only for HTTPS. IT CAN'T BE FALSE
 - **samesite** (str) - XSRF protection setting. Can be strict or lax. Read [this article](https://web.dev/samesite-cookies-explained/) for details.
-- **httpOnly** (bool) - if true, cookie won't be avaliable for using in JavaScript. IT CAN'T BE FALSE
+- **httpOnly** (bool) - if true, cookie won't be available for using in JavaScript. IT CAN'T BE FALSE
