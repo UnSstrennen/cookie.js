@@ -2,7 +2,7 @@
 A simple &amp; lightweight library for working with cookies written on pure JavaScript. **Supports simple working with json objects.**
 ***
 ## Why us?
-- Simple & lightweight (Minified version size - **707 B**)
+- Simple & lightweight (Minified version size - **596 B**)
 - Works with **JSON** from the box (returns JSON object if necessary, sets JSON cookie automatically)
 - You can specify any parameter while setting cookie
 - Works with all browsers (**Including ES6!**)
@@ -18,12 +18,12 @@ npm i cookie.js
 ### 2. Minified version (**unpkg CDN**)
 ```html
 <!-- Main version -->
-<script src="https://unpkg.com/cookie.js@:1.0.0/src/cookie.js"></script>
+<script src="https://unpkg.com/cookie.js@:1.0.1/src/cookie.js"></script>
 <!-- Minified version -->
-<script src="https://unpkg.com/cookie.js@:1.0.0/src/cookie.min.js"></script>
+<script src="https://unpkg.com/cookie.js@:1.0.1/src/cookie.min.js"></script>
 ```
 ### 3. Build from source
-Go to ``` /src ``` folder of GitHub page and download main or minified version of script. Then, include script to your HTML page using:
+Go to ``` /src ``` folder of GitHub page and download main or minified version of script. Then, include script to your HTML page using"
 ```html
 <script src="../path/to/your/scripts/folder/cookie.min.js"></script>
 ```
@@ -32,13 +32,16 @@ Go to ``` /src ``` folder of GitHub page and download main or minified version o
 Create a session cookie:
 ```javascript
 setCookie('name', 'value');  // string cookie
-setCookie('name', {'key': 'value'});  // json cookie
+setCookie('name', {"key": "value"});  // json cookie
 ```
 Create an expiring cookie:
 ```javascript
 setCookie('name', 'value', {expires: Date(3)});  // string
-setCookie('name', {'key': 'value'}, {expires: Date(3)});  // json
+setCookie('name', {"key": "value"}, {expires: Date(3)});  // json
 ```
+
+**Don't forget that JSON format supports only double quotes.**
+
 #### With ```setCookie()``` function, you can specify any cookie options you want. You can find options table [there](#options).
 Get a cookie:
 ```javascript

@@ -1,16 +1,5 @@
 /* © Un Sstrennen, 2020 */
 
-function isJson(str) {
-  /* Returns True if str is JSON, overwise false */
-  var fstr = str.replace(/(?!^)'(?!$)/g, '"');
-    try {
-        JSON.parse(fstr);
-    } catch (e) {
-        return false;
-    }
-    return true;
-}
-
 function getCookie(name, json=false) {
   /*
   Retruns cookie with specified name (str) if exists, else - undefined
@@ -21,7 +10,15 @@ function getCookie(name, json=false) {
   ));
   if (matches) {
     var res = decodeURIComponent(matches[1]);
-    return (json && isJson(res)) ? JSON.parse(res.replace(/(?!^)'(?!$)/g, '"')) : res;
+    if (json) {
+      try {
+        return JSON.parse(res);
+      }
+      catch(e) {
+        return res;
+      }
+    }
+    return res;
   }
   else return undefined;
 }
