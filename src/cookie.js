@@ -6,7 +6,7 @@ function getCookie(name, json=false) {
   if returning value is JSON and json parameter is true, returns json, overwise str
   */
   let matches = document.cookie.match(new RegExp(
-    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    "(?:^|; )" + name.replace(/([.$?*|{}()\[\]\\\/+^])/g, '\\$1') + "=([^;]*)"
   ));
   if (matches) {
     var res = decodeURIComponent(matches[1]);
