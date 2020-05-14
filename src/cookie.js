@@ -18,12 +18,13 @@ function getCookie(name, json=false) {
         return JSON.parse(res);
       }
       catch(e) {
-        return res;
+
       }
     }
     return res;
   }
-  else return undefined;
+
+  return undefined;
 }
 
 function setCookie(name, value, options = {path: '/'}) {
