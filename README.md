@@ -23,7 +23,7 @@ npm i cookielib
 <script src="https://unpkg.com/cookielib/src/cookie.min.js"></script>
 ```
 ### 3. Build from source
-Go to ``` /src ``` folder of GitHub page and download main or minified version of script. Then, include script to your HTML page using"
+Go to ``` /src ``` folder of GitHub page and download main or minified version of script. Then, include script to your HTML page using
 ```html
 <script src="../path/to/your/scripts/folder/cookie.min.js"></script>
 ```
@@ -32,12 +32,12 @@ Go to ``` /src ``` folder of GitHub page and download main or minified version o
 Create a session cookie:
 ```javascript
 setCookie('name', 'value');  // string cookie
-setCookie('name', {"key": "value"});  // json cookie
+setCookie('name', {key: 'value'});  // json cookie
 ```
 Create an expiring cookie:
 ```javascript
 setCookie('name', 'value', {expires: new Date('2020-10-10 03:00:00')});  // string
-setCookie('name', {"key": "value"}, {expires: new Date('2020-10-10 03:00:00')});  // json
+setCookie('name', {key: 'value'}, {expires: new Date('2020-10-10 03:00:00')});  // json
 ```
 
 **Don't forget that JSON format supports only double quotes.**
@@ -46,7 +46,7 @@ setCookie('name', {"key": "value"}, {expires: new Date('2020-10-10 03:00:00')});
 Get a cookie:
 ```javascript
 getCookie('name')  // string cookies
-getCookie('name', json=true)  // json cookie, returns json object
+getCookie('name', true)  // json cookie, returns json object
 ```
 Delete a cookie:
 ```javascript
