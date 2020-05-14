@@ -5,7 +5,7 @@
   "main": "src/cookie.js",
   "unpkg": "src/cookie.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap --no-coverage tests"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/UnSstrennen/cookie.js/issues"
   },
-  "homepage": "https://github.com/UnSstrennen/cookie.js#readme"
+  "homepage": "https://github.com/UnSstrennen/cookie.js#readme",
+  "dependencies": {
+    "tap": "^14.10.7"
+  }
 }

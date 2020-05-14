@@ -42,6 +42,12 @@ function setCookie(name, value, options = {path: '/'}) {
     - httpOnly (bool) - if true, cookie won't be available for using in JavaScript
                         IT CAN'T BE FALSE
   */
+  if (!name) {
+    return;
+  }
+
+  options = options || {};
+
   if (options.expires instanceof Date) {
     options.expires = options.expires.toUTCString();
   }
@@ -69,4 +75,18 @@ function deleteCookie(name) {
     expires: new Date(),
     path: '/'
   })
+}
+
+if (typeof process !== 'undefined' &&
+  process.versions != null &&
+  process.versions.node != null) {
+  global.document = {
+    cookie: ''
+  }
+  module.exports = {
+    document: document,
+    setCookie: setCookie,
+    getCookie: getCookie,
+    deleteCookie: deleteCookie,
+  }
 }
