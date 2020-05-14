@@ -2,8 +2,8 @@
 
 function getCookie(name, json=false) {
   /*
-  Retruns cookie with specified name (str) if exists, else - undefined
-  if returning value is JSON and json parameter is true, returns json, overwise str
+  Returns cookie with specified name (str) if exists, else - undefined
+  if returning value is JSON and json parameter is true, returns json, otherwise str
   */
   let matches = document.cookie.match(new RegExp(
     "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
@@ -28,16 +28,16 @@ function setCookie(name, value, options = {path: '/'}) {
   Sets a cookie with specified name (str), value (str) & options (dict)
 
   options keys:
-    - path (str) - URL, for which this cookie is avaliable (must be absolute!)
-    - domain (str) - domain, for which this cookie is avaliable
+    - path (str) - URL, for which this cookie is available (must be absolute!)
+    - domain (str) - domain, for which this cookie is available
     - expires (Date object) - expiration date&time of cookie
     - max-age (int) - cookie lifetime in seconds (alternative for expires option)
-    - secure (bool) - if true, cookie will be avaliable only for HTTPS.
+    - secure (bool) - if true, cookie will be available only for HTTPS.
                       IT CAN'T BE FALSE
     - samesite (str) - XSRF protection setting.
                        Can be strict or lax
                        Read https://web.dev/samesite-cookies-explained/ for details
-    - httpOnly (bool) - if true, cookie won't be avaliable for using in JavaScript
+    - httpOnly (bool) - if true, cookie won't be available for using in JavaScript
                         IT CAN'T BE FALSE
   */
   if (options.expires instanceof Date) {
