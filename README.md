@@ -18,9 +18,9 @@ npm i cookielib
 ### 2. Minified version (**unpkg CDN**)
 ```html
 <!-- Main version -->
-<script src="https://unpkg.com/cookie.js@:1.0.1/src/cookie.js"></script>
+<script src="https://unpkg.com/cookielib/src/cookie.js"></script>
 <!-- Minified version -->
-<script src="https://unpkg.com/cookie.js@:1.0.1/src/cookie.min.js"></script>
+<script src="https://unpkg.com/cookielib/src/cookie.min.js"></script>
 ```
 ### 3. Build from source
 Go to ``` /src ``` folder of GitHub page and download main or minified version of script. Then, include script to your HTML page using"

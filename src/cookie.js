@@ -17,9 +17,7 @@ function getCookie(name, json=false) {
       try {
         return JSON.parse(res);
       }
-      catch(e) {
-
-      }
+      catch(e) {}
     }
     return res;
   }
