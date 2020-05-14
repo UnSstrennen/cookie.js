@@ -2,7 +2,7 @@
 A simple &amp; lightweight library for working with cookies written on pure JavaScript. **Supports simple working with json objects.**
 ***
 ## Why us?
-- Simple & lightweight (Minified version size - **596 B**)
+- Simple & lightweight (Minified version size - **602 B**)
 - Works with **JSON** from the box (returns JSON object if necessary, sets JSON cookie automatically)
 - You can specify any parameter while setting cookie
 - Works with all browsers (**Including ES6!**)
