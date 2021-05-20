@@ -38,7 +38,22 @@ Create an expiring cookie:
 ```javascript
 setCookie('name', 'value', {expires: new Date('2020-10-10 03:00:00')});  // string
 setCookie('name', {key: 'value'}, {expires: new Date('2020-10-10 03:00:00')});  // json
+
+Example: 
+// set the cookie life to 5 seconds
+
+setCookie('name', 'value', {"max-age": 5});  // string
+setCookie('name', {key: 'value'},  {"max-age": 5});  // json
+
+// set the cookie life to 1 week 
+
+setCookie('viewValue', 'value', { "max-age": 604800 }); // string
+setCookie('name', {key: 'value'},  {"max-age": 604800 });  // json
+
 ```
+
+
+
 
 **Don't forget that JSON format supports only double quotes.**
 
