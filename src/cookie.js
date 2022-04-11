@@ -83,10 +83,11 @@ if (typeof process !== 'undefined' &&
   global.document = {
     cookie: ''
   }
-  module.exports = {
-    document: document,
-    setCookie: setCookie,
-    getCookie: getCookie,
-    deleteCookie: deleteCookie,
-  }
+}
+
+module.exports = {
+  document: document,
+  setCookie: setCookie,
+  getCookie: getCookie,
+  deleteCookie: deleteCookie,
 }
